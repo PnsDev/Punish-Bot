@@ -1,11 +1,10 @@
 const Discord = require("discord.js");
-const Enmap = require("enmap");
  
 module.exports.run = async (client, message, args) => {
     const ping = new Date().getTime() - message.createdTimestamp;
     //fancy color for the embed
     let embedColor;
-    if (ping >= 1000) embedColor = '#';
+    if (ping >= 1000) embedColor = '#f3474b';
     else if (ping >= 500) embedColor = '#eca013';
     else embedColor = '#eca013';
     const embed = new Discord.MessageEmbed()
